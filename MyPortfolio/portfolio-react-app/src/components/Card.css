@@ -1,31 +1,68 @@
 .card {
-  width: 250px;
-  height: 350px;
-  background: blanchedalmond;
+  width: 240px;
+  height: 336px;
   border-radius: 16px;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   margin: 16px;
   transition: box-shadow 0.3s ease;
-  transform-style: preserve-3d;
+  transform-origin: bottom center;
+  transition: transform 0.1s ease;
   perspective: 1000px;
   will-change: transform;
+  border: 8px solid #FFD700;
+  box-shadow:
+    0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .card:hover {
   transform: rotateY(10deg) rotateX(10deg);
 }
 
-.card img {
+.card-img {
   width: 100%;
-  height: 65%;
-  object-fit: fill;
+  height: 100%;
+  object-fit: contain;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border: 2px solid white;
+}
+
+.image {
+  background-color: blanchedalmond;
+  height: 60%;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  color: black;
+
+}
+
+.card-divider {
+  height: 2px;
+  background: #FFD700;
+  margin: 4px 12px;
+  border-radius: 1px;
 }
 
 .card-content {
   padding: 12px;
   text-align: center;
   color: black;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  will-change: transform;
 }
 
 .card-content h2 {
@@ -38,7 +75,17 @@
   color: black;
 }
 
+.description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  padding: 0 12px;
+  text-align: center;
+  color: #333;
+  min-height: 60px;
+}
+
 .glare {
+  opacity: 0;
   position: absolute;
   width: 120px;
   height: 120px;

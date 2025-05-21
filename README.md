@@ -24,3 +24,9 @@
 ---
 
 👀 포트폴리오를 통해 저의 개발 여정을 확인해주세요!
+
+## 📦 Credits
+
+This project was built using styles and animations from  
+[simeydotme/pokemon-cards-css](https://github.com/simeydotme/pokemon-cards-css),  
+which is licensed under the [GPL-3.0 License](https://www.gnu.org/licenses/gpl-3.0.html).

@@ -67,19 +67,23 @@ function Card({ card }) {
 
     // blanchedalmond
     const styles = {
-    frontend: {
-      backgroundColor: "#388E3C", // 밝은 초록
-      color: "#000",              // 어두운 글자
-    },
-    backend: {
-      backgroundColor: "#2F4F4F", // 진한 초록
-      color: "#fff",              // 흰색 글자
-    },
-    DB: {
-      backgroundColor: "#A9A9A9", // 진한 초록
-      color: "#fff",              // 흰색 글자
-    },
-  };
+      intro: {
+        backgroundColor: "#F6FC7A", // 밝은 초록
+        color: "#000",              // 어두운 글자
+      },
+      frontend: {
+        backgroundColor: "#388E3C", // 밝은 초록
+        color: "#000",              // 어두운 글자
+      },
+      backend: {
+        backgroundColor: "#2F4F4F", // 진한 초록
+        color: "#fff",              // 흰색 글자
+      },
+      DB: {
+        backgroundColor: "#A9A9A9", // 진한 초록
+        color: "#fff",              // 흰색 글자
+      },
+    };
 
   const style = styles[card.type] || {};
 

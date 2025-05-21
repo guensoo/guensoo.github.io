@@ -2,7 +2,7 @@ import Card from './Card';
 
 const introCard = {
   id: 0,
-  name: "최근수",
+  name: "자기 소개",
   img: "/img/profile.png",
   description: "풀스택 개발자를 꿈꾸는 최근수 입니다.",
   type: "intro"

@@ -25,7 +25,7 @@
 
 👀 포트폴리오를 통해 저의 개발 여정을 확인해주세요!
 
-## 🧩 참고 출처 표기
+## 🧩 출처 참고
 
 이 포트폴리오는  
 [simeydotme/pokemon-cards-css](https://github.com/simeydotme/pokemon-cards-css)에서 제공한  

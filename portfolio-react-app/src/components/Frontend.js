@@ -9,11 +9,17 @@ const frontendCards = [
 
 function Frontend() {
   return (
-    <>
+    <div style={{
+      display: "flex",
+      flexWrap: "wrap",
+      justifyContent: "center",
+      gap: "20px",
+      padding: "20px"
+    }}>
       {frontendCards.map((card) => (
         <Card key={card.id} card={card} />
       ))}
-    </>
+    </div>
   );
 }
 

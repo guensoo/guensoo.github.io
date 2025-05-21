@@ -4,7 +4,8 @@ const introCard = {
   id: 0,
   name: "자기 소개",
   img: "/img/profile.png",
-  description: "풀스택 개발자를 꿈꾸는 최근수 입니다.",
+  description: "개인정보\n\n더보기",
+  modalDescription: "Email : chgs9079@naver.com\n\nPhone : 010-9960-6797\n\n학력 : 고려사이버대학교 컴퓨터공학과 4학년재학\n\n병역 : 대한민국 해병대 중사 단기복무 만기 전역\n\n경력 : 2019.04 ~ 2024.11 대한민국 해병대 부사관",
   type: "intro"
 };
 

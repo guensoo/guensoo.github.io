@@ -1,12 +1,25 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import "./Card.css";
 import { motion, useMotionValue, useSpring, useMotionTemplate  } from 'framer-motion';
+import project from "./Project";
 
 function Card({ card }) {
   const rotateX = useMotionValue(0);
   const rotateY = useMotionValue(0);
   const scale = useMotionValue(1);
   const [glarePos, setGlarePos] = useState({ x: 50, y: 50, opacity: 0,});
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      rotateX.set(0);
+      rotateY.set(0);
+      scale.set(1);
+      setGlarePos((prev) => ({ ...prev, opacity: 0 }));
+    } else {
+      document.body.classList.remove('modal-open');
+    }
+  }, [isOpen]);
 
   const springX = useSpring(rotateX, {
   stiffness: 60, // ↓ 더 낮추면 더 부드러움
@@ -83,6 +96,10 @@ function Card({ card }) {
         backgroundColor: "#A9A9A9", // 진한 초록
         color: "#fff",              // 흰색 글자
       },
+      project: {
+        backgroundColor: "#DE3163", // 진한 초록
+        color: "#fff",              // 흰색 글자
+      },
     };
 
   const style = styles[card.type] || {};
@@ -96,16 +113,17 @@ function Card({ card }) {
 
   return (
     <motion.div
-      className="card"
+      className={`card ${isOpen ? "modal-open" : ""}`}
       ref={cardRef}
       style={{
         ...style,
         transform: motionTransform,
         transformStyle: "preserve-3d",
-        perspective: "1000px"
+        perspective: "1000px",
       }}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={reset}
+      onMouseMove={isOpen ? null : handleMouseMove}
+      onMouseLeave={isOpen ? null : reset}
+      onClick={() => setIsOpen(prev => !prev)}
     >
       <div
       className="glare"
@@ -116,16 +134,40 @@ function Card({ card }) {
       }}
       />
       <div className="title" style={style}>
-        <h2 className="card-title" style={{ color: style.color }}>{card.name}</h2>
+        <h2 className="card-title" style={{ color: isOpen ? "#000" : style.color }}>{card.name}</h2>
       </div>
 
       <div className="image">
         <img className="card-img" src={card.img} alt={card.name} />
       </div>
 
-      <div className="description" style={style}>
+      <div className="description" style={{
+        color: isOpen ? "#000" : style.color,
+        ...style,
+      }}>
         <p className="card-description">{card.description}</p>
       </div>
+      {isOpen && (
+        <div className="modal-overlay" onClick={() => setIsOpen(false)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <h3>{card.name}</h3>
+            <p style={{ whiteSpace: 'pre-line' }}>
+              {card.modalDescription || card.description}
+            </p>
+            <button
+              className="modal-close"
+              onClick={() => setIsOpen(false)}
+              style={{
+                position: 'absolute',
+                top: '12px',
+                right: '12px',
+                cursor: 'pointer',
+            }}>
+              ❌
+            </button>
+          </div>
+        </div>
+      )}
     </motion.div>
   );
 }

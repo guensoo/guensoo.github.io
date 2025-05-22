@@ -2,18 +2,19 @@ import Card from './Card';
 
 const dataBaseCards = [
   { id: 9, 
-    name: "ORACLE",
-    img: "/img/oracle.png", 
-    description: "자바와 찰떡궁합",
-    modalDescription: "자바와 찰떡궁합 DB\n\n프로시저 작성에 적합한 DBMS", 
-    type: "DB" },
-  { id: 10, 
     name: "MySQL", 
     img: "/img/mysql.png", 
     description: "관계형 DB",
-    modalDescription: "관계형 DB\n\n가볍고 빠르며 오픈소스로 운영에 적합한 DBMS",
+    modalDescription: "경량 오픈소스 관계형 데이터베이스\n\n학습기간:\n2024.11.13~2024.12.09",
     type: "DB" },
-];
+
+  { id: 10, 
+    name: "ORACLE",
+    img: "/img/oracle.png", 
+    description: "자바와 찰떡궁합",
+    modalDescription: "기업용 상용 DBMS\nDB 안에서 저장된 명령어\n사용 가능\n\n학습기간:\n2025.02.19~", 
+    type: "DB" },
+  ];
 
 function dataBase() {
   return (

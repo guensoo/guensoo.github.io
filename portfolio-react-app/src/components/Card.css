@@ -1,24 +1,3 @@
-.card {
-  width: 240px;
-  height: 336px;
-  border-radius: 16px;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
-  overflow: hidden;
-  margin: 16px;
-  transition: box-shadow 0.3s ease;
-  transform-origin: bottom center;
-  transition: transform 0.1s ease;
-  perspective: 1000px;
-  will-change: transform;
-  border: 8px solid #FFD700;
-  box-shadow:
-    0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-.card:hover {
-  transform: rotateY(10deg) rotateX(10deg);
-}
-
 .card-img {
   width: 100%;
   height: 100%;
@@ -32,21 +11,21 @@
 
 .image {
   background-color: blanchedalmond;
-  height: 60%;
+  height: 70%;
   padding: 0;
   margin: 0;
   border-radius: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 15px;
 }
 
 .card-title {
   font-size: 20px;
   font-weight: bold;
   margin: 0;
-  color: black;
-
+  color: inherit;
 }
 
 .card-divider {
@@ -59,7 +38,7 @@
 .card-content {
   padding: 12px;
   text-align: center;
-  color: black;
+  color: inherit;
   transform-style: preserve-3d;
   backface-visibility: hidden;
   will-change: transform;
@@ -68,19 +47,24 @@
 .card-content h2 {
   font-size: 20px;
   margin-bottom: 8px;
+  color: inherit;
 }
 
 .card-content p {
   font-size: 14px;
-  color: black;
+  color: inherit;
 }
 
 .description {
-  font-size: 0.95rem;
-  line-height: 1.6;
+  /* 카드 앞장 설명 크기 */
+  font-size: 1.1rem;
+  /* 카드 앞장 설명 굵기 */
+  font-weight: bold;
+  margin: 0 0 8px 0;
+  line-height: 1.5;
   padding: 0 8px;
   text-align: center;
-  color: #333;
+  color: inherit;
   min-height: 60px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -95,7 +79,7 @@
   position: absolute;
   width: 120px;
   height: 120px;
-  background: rgba(255, 255, 255, 0.25); /* 반투명 흰색 */
+  background: rgba(255, 255, 255, 0.25);
   border-radius: 50%;
   pointer-events: none;
   filter: blur(30px);
@@ -115,29 +99,84 @@
   align-items: center;
   justify-content: center;
   z-index: 1000;
+  overflow: hidden;
 }
 
 .modal-content {
+  position: relative;
   background: white;
   padding: 24px;
+  color: #000;
   border-radius: 12px;
   max-width: 400px;
-  width: 90%;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-  white-space: pre-line;
   text-align: left;
 }
 
 .modal-close {
-  margin-top: 16px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
   background: #333;
   color: white;
-  padding: 8px 16px;
+  padding: 6px 12px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
 }
 
-.modal-open * {
-  color: #000 !important;
+.compact-lines div {
+  display: block;
+  margin: 5px 0;
+  padding: 5px;
+  margin-left: 0;
+  margin-right: 0;
+  line-height: 1.3;
+}
+
+.compact-lines {
+  font-size: 0.9rem;
+}
+
+.card-flip-container {
+  perspective: 1200px;
+  width: 240px;
+  height: 336px;
+}
+
+.card-flip {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.card-flip-container.flipped .card-flip {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: inherit;
+}
+
+.card-front {
+  color: inherit;
+  z-index: 2;
+  transform: rotateY(0deg);
+  border: 8px solid gold;
+}
+
+.card-back {
+  background: white;
+  transform: rotateY(180deg);
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  z-index: 1;
 }

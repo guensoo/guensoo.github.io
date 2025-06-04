@@ -8,21 +8,35 @@ const projectCards = [
     modalDescription: (
       <div>
         제가 배운 수업을<br />
-        한 페이지에 정리했습니다!<br />
-        <br />
-        정리한 내용은{" "}
-        <a
-          href="https://glimmer-panda-a17.notion.site/1bae5c3f5d17806da208f08c1bf3bde2"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <strong>여기</strong>
-        </a>
-        서 확인해주세요
+        정리해 보았습니다!<br />
+        Notion으로 정리한 내용은<br/>
+        아래에서 확인해주세요!
         <br />
         <br />
         공부기간:<br />
-        2025.2.18~2025.8.00
+        2025.02.18~2025.08.05
+        <a href="https://glimmer-panda-a17.notion.site/1bae5c3f5d17806da208f08c1bf3bde2" target="_blank" rel="noreferrer" style={{
+          display: "inline-block",
+          marginTop: "10px",
+          padding: "8px 16px",
+          backgroundColor: "#333",
+          color: "#fff",
+          borderRadius: "8px",
+          textDecoration: "none"
+        }}>
+          🔗 Notion 바로가기
+        </a>
+        <a href="https://github.com/guensoo/AWS-Full_stack_developer_traning" target="_blank" rel="noreferrer" style={{
+          display: "inline-block",
+          marginTop: "10px",
+          padding: "8px 16px",
+          backgroundColor: "#333",
+          color: "#fff",
+          borderRadius: "8px",
+          textDecoration: "none"
+        }}>
+          🔗 GitHub 바로가기
+        </a>
       </div>
     ),
     type: "projects" },

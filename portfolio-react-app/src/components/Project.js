@@ -4,7 +4,7 @@ const projectCards = [
   { id: 11, 
     name: "국비수업",
     img: "/img/aws.png", 
-    description: "IT 공부의 과정",
+    description: "📘 국비 6개월 과정 정리",
     modalDescription: (
       <div>
         제가 배운 수업을<br />
@@ -13,7 +13,7 @@ const projectCards = [
         아래에서 확인해주세요!
         <br />
         <br />
-        공부기간:<br />
+        📅 학습 기간:<br />
         2025.02.18~2025.08.05
         <a href="https://glimmer-panda-a17.notion.site/1bae5c3f5d17806da208f08c1bf3bde2" target="_blank" rel="noreferrer" style={{
           display: "inline-block",
@@ -24,7 +24,7 @@ const projectCards = [
           borderRadius: "8px",
           textDecoration: "none"
         }}>
-          🔗 Notion 바로가기
+          📄 Notion 정리 보기
         </a>
         <a href="https://github.com/guensoo/AWS-Full_stack_developer_traning" target="_blank" rel="noreferrer" style={{
           display: "inline-block",
@@ -35,7 +35,7 @@ const projectCards = [
           borderRadius: "8px",
           textDecoration: "none"
         }}>
-          🔗 GitHub 바로가기
+          💻 GitHub 코드 보기
         </a>
       </div>
     ),

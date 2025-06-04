@@ -52,8 +52,8 @@ function Intro() {
         }}>
           카드를 클릭하면 상세내용을 볼 수 있습니다.<br/>
           모바일에서는 제대로 구현되지 않을 수 있습니다.<br/>
-          모바일은 2025. 5. 22 기준 배우는 중입니다!<br/>
-          추후 업데이트 예정입니다!!
+          모바일은 2025. 6. 4. 기준 배우는 중입니다!<br/>
+          지속 업데이트 예정입니다!!
         </p>
         <a href="https://github.com/guensoo" target="_blank" rel="noreferrer" style={{
           display: "inline-block",

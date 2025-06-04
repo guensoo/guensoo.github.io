@@ -22,7 +22,7 @@ function App() {
           <Intro />
         </Section>
         <hr className="section-divider" />
-        <Section title="Projects">
+        <Section title="Study & Projects">
           <Project />
         </Section>
         <hr className="section-divider" />

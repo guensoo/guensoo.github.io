@@ -61,8 +61,21 @@ const projectCards = [
         서 확인해주세요
         <br />
         <br />
+        <a href="https://shelter-app-five.vercel.app/" target="_blank" rel="noreferrer" style={{
+          display: "inline-block",
+          marginTop: "10px",
+          padding: "8px 16px",
+          backgroundColor: "#333",
+          color: "#fff",
+          borderRadius: "8px",
+          textDecoration: "none"
+        }}>
+          💻 웹 페이지 보기
+        </a>
+        <br />
+        <br />
         작업기간:<br />
-        2025.55.10~2025.00.00
+        2025.05.10~2025.00.00
       </div>
     ),
     type: "projects" },

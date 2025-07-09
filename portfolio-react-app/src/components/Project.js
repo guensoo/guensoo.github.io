@@ -47,21 +47,25 @@ const projectCards = [
     modalDescription: (
       <div>
         더위, 한파, 대피소<br />
-        모든 것이 한 개의<br />
-        프로젝트에!<br />
+        모든 것이 한 개의
+        프로젝트에!
         <br />
         자세한 코드는{" "}
-        <a
-          href="https://github.com/guensoo/ShelterApp"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <strong>여기</strong>
-        </a>
-        서 확인해주세요
+        깃허브에서<br />확인해주세요
         <br />
         <br />
-        <a href="https://shelter-app-black.vercel.app/" target="_blank" rel="noreferrer" style={{
+        작업기간:<br />
+        2025.05.10~2025.00.00<br />
+        <a href="https://github.com/guensoo/ShelterApp" target="_blank" rel="noreferrer" style={{
+          display: "inline-block",
+          marginTop: "10px",
+          padding: "8px 16px",
+          backgroundColor: "#333",
+          color: "#fff",
+          borderRadius: "8px",
+          textDecoration: "none"
+        }}>💻 GitHub 코드 보기</a>
+        <a href="https://www.shelter.io.kr/" target="_blank" rel="noreferrer" style={{
           display: "inline-block",
           marginTop: "10px",
           padding: "8px 16px",
@@ -72,10 +76,6 @@ const projectCards = [
         }}>
           💻 웹 페이지 보기
         </a>
-        <br />
-        <br />
-        작업기간:<br />
-        2025.05.10~2025.00.00
       </div>
     ),
     type: "projects" },

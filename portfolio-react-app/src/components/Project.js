@@ -55,7 +55,7 @@ const projectCards = [
         <br />
         <br />
         작업기간:<br />
-        2025.05.10~2025.00.00<br />
+        2025.05.10~2025.07.11<br />
         <a href="https://github.com/guensoo/ShelterApp" target="_blank" rel="noreferrer" style={{
           display: "inline-block",
           marginTop: "10px",

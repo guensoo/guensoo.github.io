@@ -15,7 +15,7 @@ const projectCards = [
         <br />
         <br />
         📅 학습 기간:<br />
-        2025.02.18~2025.08.05<br />
+        2025.02.19~2025.08.07<br />
         <a href="https://glimmer-panda-a17.notion.site/1bae5c3f5d17806da208f08c1bf3bde2" target="_blank" rel="noreferrer" style={{
           display: "inline-block",
           marginTop: "10px",
@@ -142,16 +142,7 @@ const projectCards = [
         <br />
         <br />
         작업기간:<br />
-        2025.06.09~2025.07.04.<br />
-        <a href="http://teamproject-uka.s3-website.ap-northeast-2.amazonaws.com/" target="_blank" rel="noreferrer" style={{
-          display: "inline-block",
-          marginTop: "10px",
-          padding: "8px 16px",
-          backgroundColor: "#333",
-          color: "#fff",
-          borderRadius: "8px",
-          textDecoration: "none"
-        }}>💻 GitHub 코드 보기</a>
+        2025.07.18~2025.08.05.<br />
         <a href="https://github.com/guensoo/TeamProject-OMR" target="_blank" rel="noreferrer" style={{
           display: "inline-block",
           marginTop: "10px",
@@ -160,9 +151,7 @@ const projectCards = [
           color: "#fff",
           borderRadius: "8px",
           textDecoration: "none"
-        }}>
-          💻 웹 페이지 보기
-        </a>
+        }}>💻 GitHub 코드 보기</a>
       </div>
     ),
     type: "projects"

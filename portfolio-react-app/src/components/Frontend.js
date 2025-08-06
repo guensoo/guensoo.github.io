@@ -9,7 +9,7 @@ const frontendCards = [
         설계하는 마크업 언어<br />
         <br />
         학습기간:<br />
-        2025.02.19~
+        2025.02.19~2025.08.07
       </div>
     ),
     type: "frontend" },
@@ -19,7 +19,8 @@ const frontendCards = [
       HTML 요소를 꾸미는<br/>
       스타일 시트 언어<br/>
       <br/>
-      학습기간:<br/>2025.02.19~
+      학습기간:<br/>
+      2025.02.19~2025.08.07
       </div>
       ),
     type: "frontend" },
@@ -29,7 +30,7 @@ const frontendCards = [
       동적 기능과 로직 제어를<br/>
       위한 스크립트 언어<br/><br/>
       학습기간:<br/>
-      2025.02.19~
+      2025.02.19~2025.08.07
       </div>
     ),
     type: "frontend" },
@@ -40,7 +41,7 @@ const frontendCards = [
       상태관리, 라우팅,<br/>
       API 연동 등<br/><br/>
       학습기간:<br/>
-      2025.02.19~
+      2025.02.19~2025.08.07
       </div>
       ),
     type: "frontend" },
@@ -50,7 +51,7 @@ const frontendCards = [
         앱 개발 프레임워크<br/>
         React 기반 컴포넌트 & 이벤트 처리<br/><br/>
         학습기간:<br/>
-        2025.02.19~
+        2025.02.19~2025.08.07
       </div>
     ),
     type: "frontend" },

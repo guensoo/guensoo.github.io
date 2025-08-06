@@ -32,7 +32,7 @@ const backendCards = [
         백엔드 프로그래밍 언어<br />
         <br />
         학습기간:<br />
-        2025.02.19~
+        2025.02.19~2025.08.07
       </div>
     ),
     type: "backend" },
@@ -43,7 +43,7 @@ const backendCards = [
         Java 기반 프레임워크<br />
         <br />
         학습기간:<br />
-        2025.02.19~
+        2025.02.19~2025.08.07
       </div>
     ),
     type: "backend" },

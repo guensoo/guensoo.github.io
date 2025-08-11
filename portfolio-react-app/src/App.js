@@ -6,6 +6,7 @@ import Backend from './components/Backend';
 import Section from './components/Section';
 import DB from './components/DB'
 import Project from './components/Project';
+import Study from './components/Study';
 
 function App() {
   return (
@@ -19,8 +20,12 @@ function App() {
             </Section>
             
             <hr className="section-divider" />
+
+            <Section title="Study">
+              <Study />
+            </Section>
             
-            <Section title="Study & Projects">
+            <Section title="Projects">
               <Project />
             </Section>
             

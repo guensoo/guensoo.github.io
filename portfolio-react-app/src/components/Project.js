@@ -1,49 +1,11 @@
+import React from 'react';
 import Card from './Card';
+import './Card.css';
 
+// 프로젝트 데이터
 const projectCards = [
   {
     id: 11,
-    name: "국비수업",
-    img: "/img/aws.png",
-    description: "📘 국비 6개월 과정 정리",
-    modalDescription: (
-      <div>
-        제가 배운 수업을<br />
-        정리해 보았습니다!<br />
-        Notion으로 정리한 내용은<br />
-        아래에서 확인해주세요!
-        <br />
-        <br />
-        📅 학습 기간:<br />
-        2025.02.19~2025.08.07<br />
-        <a href="https://glimmer-panda-a17.notion.site/1bae5c3f5d17806da208f08c1bf3bde2" target="_blank" rel="noreferrer" style={{
-          display: "inline-block",
-          marginTop: "10px",
-          padding: "8px 16px",
-          backgroundColor: "#333",
-          color: "#fff",
-          borderRadius: "8px",
-          textDecoration: "none"
-        }}>
-          📄 Notion 정리 보기
-        </a>
-        <a href="https://github.com/guensoo/AWS-Full_stack_developer_traning" target="_blank" rel="noreferrer" style={{
-          display: "inline-block",
-          marginTop: "10px",
-          padding: "8px 16px",
-          backgroundColor: "#333",
-          color: "#fff",
-          borderRadius: "8px",
-          textDecoration: "none"
-        }}>
-          💻 GitHub 코드 보기
-        </a>
-      </div>
-    ),
-    type: "projects"
-  },
-  {
-    id: 12,
     name: "쉼:터",
     img: "/img/shelter_logo.png",
     description: "첫 개인프로젝트",
@@ -67,7 +29,9 @@ const projectCards = [
           color: "#fff",
           borderRadius: "8px",
           textDecoration: "none"
-        }}>💻 GitHub 코드 보기</a>
+        }}>
+          💻 GitHub 코드 보기
+        </a>
         <a href="https://www.shelter.io.kr/" target="_blank" rel="noreferrer" style={{
           display: "inline-block",
           marginTop: "10px",
@@ -81,10 +45,10 @@ const projectCards = [
         </a>
       </div>
     ),
-    type: "projects"
+    type: "project"
   },
   {
-    id: 13,
+    id: 12,
     name: "유기동물입양 웹",
     img: "/img/MainLogo.png",
     description: "첫 팀프로젝트",
@@ -109,7 +73,9 @@ const projectCards = [
           color: "#fff",
           borderRadius: "8px",
           textDecoration: "none"
-        }}>💻 GitHub 코드 보기</a>
+        }}>
+          💻 웹 페이지 보기
+        </a>
         <a href="https://github.com/guensoo/TeamPJ-UKA" target="_blank" rel="noreferrer" style={{
           display: "inline-block",
           marginTop: "10px",
@@ -119,11 +85,11 @@ const projectCards = [
           borderRadius: "8px",
           textDecoration: "none"
         }}>
-          💻 웹 페이지 보기
+          💻 GitHub 코드 보기
         </a>
       </div>
     ),
-    type: "projects"
+    type: "project"
   },
   {
     id: 13,
@@ -135,7 +101,6 @@ const projectCards = [
         OTT와 영화의 리뷰를<br />
         앱으로 볼 수 있도록<br />
         준비되어있는!<br />
-        유기동물 입양 신청까지<br />
         <br />
         자세한 코드는{" "}
         깃허브에서<br />확인해주세요
@@ -151,26 +116,25 @@ const projectCards = [
           color: "#fff",
           borderRadius: "8px",
           textDecoration: "none"
-        }}>💻 GitHub 코드 보기</a>
+        }}>
+          💻 GitHub 코드 보기
+        </a>
       </div>
     ),
-    type: "projects"
-  },
+    type: "project"
+  }
 ];
 
 function Project() {
   return (
-    <div style={{
-      display: "flex",
-      flexWrap: "wrap",
-      justifyContent: "center",
-      gap: "20px",
-      padding: "20px"
-    }}>
-      {projectCards.map((card) => (
-        <Card key={card.id} card={card} />
-      ))}
-    </div>
+    <section className="section">
+      <h2 className="section-title">💻 프로젝트</h2>
+      <div className="section-content">
+        {projectCards.map((card) => (
+          <Card key={card.id} card={card} />
+        ))}
+      </div>
+    </section>
   );
 }
 
